@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Adam Walz <adam@butter.ai>
+MAINTAINER Butter.ai <dev@butter.ai>
 
 EXPOSE 80 443
 
