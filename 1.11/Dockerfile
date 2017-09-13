@@ -62,6 +62,7 @@ RUN wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz \
     --with-ld-opt="-Wl,-z,relro -Wl,--as-needed,-rpath,${LUAJIT_LIB}" \
     --add-module=/ngx_devel_kit-${NGINX_DEVEL_KIT_VERSION} \
     --add-module=/lua-nginx-module-${LUA_NGINX_MODULE_VERSION} \
+    --with-http_stub_status_module \
  && make -j2 \
  && make install \
  && ln -s ${NGINX_ROOT}/sbin/nginx /usr/local/sbin/nginx \
