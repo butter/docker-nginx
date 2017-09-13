@@ -1,13 +1,13 @@
 FROM debian:jessie
-MAINTAINER Butter.ai <dev@butter.ai>
+LABEL maintainer="Butter.ai <dev@butter.ai>"
 
 EXPOSE 80 443
 
 ENV \
   NGINX_DEVEL_KIT_VERSION=0.3.0 \
-  LUA_NGINX_MODULE_VERSION=0.10.7 \
-  NGINX_VERSION=1.11.10 \
-  LUAJIT_VERSION=2.0.4
+  LUA_NGINX_MODULE_VERSION=0.10.10 \
+  NGINX_VERSION=1.13.5 \
+  LUAJIT_VERSION=2.0.5
 
 RUN groupadd -r nginx \
  && useradd -r -g nginx nginx
